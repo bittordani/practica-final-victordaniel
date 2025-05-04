@@ -1,0 +1,11 @@
+name: Mostrar Nombre
+
+on:
+  workflow_dispatch:  # Permite ejecución manual desde GitHub
+
+jobs:
+  imprimir-nombre:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar mi nombre completo
+        run: echo "Víctor Daniel Martínez Martínez"
